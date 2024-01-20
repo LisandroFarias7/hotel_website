@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="logo">
+        <a href="/inicio"><img src="../../../assets/img/logo-re.png" alt="" class="logo-img"></a>
+    </div>
+    <div class="navbar" [ngClass]="{ 'open': isMenuOpen }">
+        <nav>
+            <a href="" [routerLink]="['/inicio']" routerLinkActive="router-link-active">INICIO</a>
+            <a href="" [routerLink]="['/rooms']" routerLinkActive="router-link-active">HABITACIONES</a>
+            <a href="" [routerLink]="['/galeria']" routerLinkActive="router-link-active">GALERIA</a>
+        </nav>
+    </div>
+    <div class="mobile-menu" (click)="toggleMenu()" >
+        <i class="fa fa-bars"></i> <!-- Agrega el ícono de hamburguesa de FontAwesome -->
+    </div>
+</header>
+

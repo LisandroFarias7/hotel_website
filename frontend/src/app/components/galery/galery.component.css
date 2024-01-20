@@ -1,0 +1,21 @@
+.galery {
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-left: 25%;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: -0.32px;
+  text-align: center;
+}/*# sourceMappingURL=galery.component.css.map */

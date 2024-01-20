@@ -1,0 +1,21 @@
+<div class="datos-card">
+    <nav>
+        <button class="btn" routerLink="/form">Datos de la huesped</button>
+    </nav>
+    <div class="title-card">
+        <h1>DATOS DE LA TARJETA</h1>
+    </div>
+    <form [formGroup]="card">
+        <p>Tipo de Tarjeta de Crédito</p>
+        <select name="" id="">
+            <option value="">VISA</option>
+            <option value="">MASTESCARD</option>
+            <option value="">BBVA</option>
+        </select>
+        <p>Numero de la Tarjeta de Crédito</p><input type="number" formControlName="numberCard" id="">
+        <p>Fecha de Caducidad</p><input type="datetime" formControlName="dateC" id="" >
+        <p>Titular de la tarjeta de Crédito</p><input type="text" formControlName="headline" id="">
+        <p>Código de seguridad</p><input type="number" formControlName="segurityCode" id="" >
+    </form>
+</div>
+

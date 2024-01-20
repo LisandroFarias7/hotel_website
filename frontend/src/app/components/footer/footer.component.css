@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.redes {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  background: rgba(217, 217, 217, 0.4);
+}
+.redes .redes-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+}
+.redes .redes-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.redes .redes-logos img {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+}
+
+.info-foot {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  justify-content: space-around;
+}
+.info-foot .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 27px;
+}
+.info-foot .nav .title {
+  color: #fff;
+  border: 0;
+  margin-top: 15px;
+}
+.info-foot .nav .title h1 {
+  font-size: 15px;
+}
+.info-foot .nav .navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  margin: 15px;
+}
+.info-foot .nav .navbar a {
+  font-size: 12px;
+  margin: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.info-foot .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.info-foot .info i {
+  margin-right: 5px;
+}
+.info-foot .info h1 {
+  font-size: 20px;
+}
+.info-foot .info h4 {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.info-foot .info h3 {
+  font-size: 10px;
+}/*# sourceMappingURL=footer.component.css.map */

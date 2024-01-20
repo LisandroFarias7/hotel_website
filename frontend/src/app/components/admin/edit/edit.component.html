@@ -1,0 +1,12 @@
+<div class="container-edit">
+    <div class="form-add">
+        <form>
+            <input type="text" name="title" [(ngModel)]="room.title" placeholder="Titulo">
+            <input type="text" name="description"  [(ngModel)]="room.description" placeholder="Descripcion">
+            <input type="text" name="imageUrl"  [(ngModel)]="room.imageUrl" placeholder="imageUrl">
+            <input type="number" name="price" [(ngModel)]="room.price" placeholder="Precio">
+        </form>
+        <button type="button" class="btn" (click)="edit ? updateRoom() : createRoom()">GUARDAR</button>
+    </div>
+    <button type="button" class="btn" routerLink="/admin">VOLVER</button>
+</div>

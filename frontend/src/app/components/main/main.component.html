@@ -1,0 +1,73 @@
+<div class="main">
+    <div class="rooms">
+        <p>Disfrute de una relajante y placentera estadía en el Forastero Hotel. Con una ubicación perfecta en el corazón del centro, somos uno de los hoteles mejor ubicados para viajeros corporativos y grupos con cómodas habitaciones y un servicio cálido y personalizado. Nuestra ubicación, a solo una cuadra de la peatonal Florida y el Shopping Galerías Pacifico, le ofrecen lo mejor de Maggiolo directamente a usted.
+
+            Las habitaciones y suites están bien equipadas y cuentan con comodidades como conexión inalámbrica a internet gratuita, minibar, room service y televisores de pantalla plana con canales por cable y satélite. Comience su día con un suntuoso desayuno buffet en La Pérgola Restaurante y reúnase con sus colegas para un almuerzo o cena informal y cócteles en Maximilian Lobby Bar & Restaurante. También puede aprovechar su tiempo haciendo ejercicio en el gimnasio bien equipado que ofrece pesas y equipo de entrenamiento cardiovascular.</p>
+        
+        </div>
+        <div class="cards">
+                    <div *ngFor="let room of rooms" class="card">
+                        <h1>{{room.title}}</h1>
+                        <div class="card-img">
+                        <img src="{{room.imageUrl}}" alt="" srcset="">  
+                        </div>
+                        <h3>{{room.description}}</h3>
+                        <h2>U$D {{room.price}}</h2>
+                        <form [routerLink]="['/form']" [queryParams]="{ roomId: room.id, roomTitle: room.title, roomPrice: room.price }">
+                            <button type="submit" class="btn">RESERVAR AHORA</button>
+                        </form>
+                    </div>
+        </div>
+    <!-- <div class="packet">
+        <h1>PAQUETES</h1>
+        <div class="cards">
+            <div class="container-card">
+                <div *ngFor="let room of rooms" class="card">
+                    <h1>{{room.title}}</h1>
+                    <div class="card-img">
+                      <img src="{{room.imageUrl}}" alt="" srcset="">  
+                    </div>
+                    <h3>{{room.description}}</h3>
+                    <h2>{{room.price}}</h2>
+                    <button type="button" class="btn" routerLink="/form">RESERVAR AHORA</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="offers">
+        <div class="description">
+            <h1>AMENIDADES</h1>
+            <h3>Descubra un hotel moderno, cómodo y acogedor en el centro de Buenos Aires, Argentina</h3>
+            <p>Con su diseño contemporáneo, interiores acogedores y un servicio personalizado de estilo boutique, el Libertador Hotel es la opción ideal entre los viajeros de negocios más exigentes, los turistas y los grupos que visitan esta bulliciosa capital.
+
+                Disfrute de un servicio cálido y amigable que anticipa sus necesidades y supera sus expectativas.
+                
+                Manténgase conectado con wifi gratuito en todo el hotel. Comience el día con el suntuoso desayuno buffet en el restaurante La Pérgola y disfrute de la cocina internacional y de los exclusivos cócteles para el almuerzo y la cena en el recientemente renovado Maximilian Lobby Bar & Restaurant.
+                
+                Permita que nuestros experimentados equipos de planificación de eventos y catering lo ayuden a organizar reuniones memorables, bodas y ocasiones especiales en uno de nuestros ocho sofisticados lugares para eventos.
+                
+                Aproveche su tiempo haciendo ejercicios en nuestro gimnasio totalmente equipado.
+                
+                Deléitese con las numerosas opciones y servicios que ofrece nuestro hotel de Buenos Aires, igualmente adecuados para trabajar o divertirse.</p>
+        </div>
+        <div class="amenidades">
+            <div class="card-ame">
+                <div class="ubicacion">
+                    <img src="../../../assets/img/1557933521_5cdc2dd125962-thumb_2x_1x.jpg" alt="">
+                    <h1>EXCELENTE UBICACIÓN</h1>
+                    <h3>Disfrute de una ubicación codiciada en el corazón del cento de buenos aires, Argentina, cerca de los distritos financieros, comerciales y de atracciones populares.</h3>
+                </div>
+                <div class="foods">
+                    <img src="../../../assets/img/1557933246_5cdc2cbe85485-thumb_2x_1x.jpg" alt="">
+                    <h1>COMIDAS</h1>
+                    <h3>Mientras que el Foratero Hotel se encuentra a pocos pasos de algunos de los mejores restaurantes de buenos aires, los huéspedes también disfrutan de experiencias gastronómicas excepcionales sin tener que salir del hotel.</h3>
+                </div>
+                <div class="events">
+                    <img src="../../../assets/img/1557932948_5cdc2b9432fc4-thumb_2x_1x.jpg" alt="">
+                    <h1>REUNIONES Y EVENTOS</h1>
+                    <h3>Para reuniones y eventos especiales, libertador hotel ofrece un entorno impresionante con 14228 pies cuadrados de espacio sofisticado para reuniones complementado con servicios de catering y planificación de eventos totalmente personalizados.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

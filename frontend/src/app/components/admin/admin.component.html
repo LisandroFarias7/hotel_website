@@ -1,0 +1,17 @@
+  <div class="admin-container">
+    <div class="cards">
+      <div *ngFor="let room of rooms" class="card">
+          <h1>{{room.title}}</h1>
+          <div class="card-img">
+            <img src="{{room.imageUrl}}" alt="" srcset="">  
+          </div>
+          <h3>{{room.description}}</h3>
+          <h2>U$D {{room.price}}</h2>
+          <button type="button" class="btn" (click)="deleteRoom(room.id)">ELIMINAR</button>
+          <button type="button" class="btn" [routerLink]="['/admin/edit', room.id]">EDITAR</button>
+      </div>
+  </div>
+  <div class="add">
+    <button type="button" class="btn" routerLink="/admin/edit">AGREGAR</button>
+  </div>
+</div>

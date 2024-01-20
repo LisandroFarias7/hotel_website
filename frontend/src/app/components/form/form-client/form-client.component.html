@@ -1,0 +1,13 @@
+<div class="datos-huesped">
+    <div class="title">
+        <h1>DETALLES DEL HUESPED</h1>
+    </div>
+    <form [formGroup]="client">
+        <input type="text" formControlName="name" [placeholder]="'Name'" />
+        <input type="text" formControlName="lastname" [placeholder]="'Last Name'" />
+        <input type="text" formControlName="address" [placeholder]="'Address'" />
+        <input type="email" formControlName="email" [placeholder]="'Email'" />
+        <input type="text" formControlName="city" [placeholder]="'City'" />
+        <input type="number" formControlName="phone" [placeholder]="'Phone'" />
+    </form>    
+</div>

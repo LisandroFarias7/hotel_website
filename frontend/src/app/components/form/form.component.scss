@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd52;
+    width: 40%;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+input:hover {
+    padding: 30px;
+    transition: 1.3s;
+    border:2px solid #fff ;
+    background-color: #000;
+    color: #fff;
+}

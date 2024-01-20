@@ -1,0 +1,48 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 60vh;
+  width: 100vw;
+  background-image: url(https://images.pexels.com/photos/2883048/pexels-photo-2883048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  transition-delay: 1.5s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.288);
+  color: #fff;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.486);
+  color: #000000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+}
+
+img:hover {
+  width: 240px;
+  height: 200px;
+  transition-delay: 1.5s ease;
+}/*# sourceMappingURL=header.component.css.map */

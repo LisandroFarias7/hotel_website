@@ -1,0 +1,135 @@
+.carousel-container {
+    position: relative;
+    margin: 100px 350px; /* Centra el carrusel horizontalmente y ajusta el margen */
+    text-align: center;
+    width: 700px;
+    max-width: 100%; /* Haz que el carrusel se ajuste al ancho del contenedor */
+    border-radius: 15px;
+    box-shadow: 0 6px 16px #dce1e1;
+    overflow: hidden; /* Añade overflow para recortar imágenes si son demasiado grandes */
+}
+
+.carousel-container img {
+    display: none;
+    border-radius: 15px;
+    max-width: 100%; /* Hace que las imágenes se ajusten al ancho del carrusel */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.carousel-container img.image-active {
+    display: block;
+}
+
+.carousel-dot-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px; /* Ajusta el espacio inferior */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px; /* Espacio entre los puntos */
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.5;
+}
+
+.active, .dot:hover {
+    opacity: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-carousel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+    transition: background-color 0.3s ease; /* Transición para el fondo */
+}
+
+.btn-carousel:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el fondo al pasar el ratón */
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.btn-next {
+    right: 0;
+}
+
+.icon-carousel {
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.15s ease;
+}
+
+.icon-carousel:hover {
+    opacity: 0.9;
+}
+
+.icon-carousel:active {
+    opacity: 0.5;
+}
+
+.icon-prev, .btn-next {
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        margin: 10px auto; /* Reduzcamos el margen para dispositivos móviles */
+    }
+
+    .carousel-dot-container {
+        bottom: 5px; /* Reduzcamos el espacio inferior para dispositivos móviles */
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 3px; /* Reduzcamos el espacio entre los puntos para dispositivos móviles */
+    }
+
+    .btn-carousel {
+        width: 20%; /* Ajustamos el ancho de los botones para dispositivos móviles */
+        font-size: 16px; /* Reducimos el tamaño de fuente para dispositivos móviles */
+    }
+
+    .icon-carousel {
+        font-size: 28px; /* Reducimos el tamaño de fuente de los iconos para dispositivos móviles */
+    }
+}

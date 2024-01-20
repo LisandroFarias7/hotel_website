@@ -1,0 +1,114 @@
+// Header styles
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 60vh;
+    width: 100vw;
+    background-image: url(https://images.pexels.com/photos/2883048/pexels-photo-2883048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transition-delay: 1.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; // Position for mobile menu
+}
+
+// Logo styles
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+}
+
+// .logo-img:hover {
+//     width: 240px;
+//     height: 200px;
+//     transition-delay: 1.5s ease;
+// }
+
+// Navbar styles
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav {
+        display: flex;
+    }
+    
+    a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.288);
+        color: #fff;
+        border-radius: 10px;
+    }
+    
+    a:hover {
+        background-color: rgba(255, 255, 255, 0.486);
+        color: #000;
+    }
+}
+
+
+
+// Mobile menu styles
+.mobile-menu {
+    display: none; // Inicialmente oculto para pantallas más grandes
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px; // Tamaño del ícono de hamburguesa
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+// Media query for mobile responsiveness
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+    
+    .logo-img {
+        width: 150px;
+        height: 100px;
+        margin: 20px 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .open { 
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+
+        a {
+            margin: 20px 0;
+            color: #fff; // Cambia el color de los enlaces en el menú móvil
+        }
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}

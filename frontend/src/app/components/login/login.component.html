@@ -1,0 +1,11 @@
+<div class="container-edit">
+    <div class="form-add">
+        <form>
+            <input type="text" name="title" [(ngModel)]="user.username" placeholder="Usuario">
+            <input type="password" name="description"  [(ngModel)]="user.password" placeholder="Contraseña">
+        </form>
+        <button type="button" class="btn" (click)="createAdmin()">ENTRAR</button>
+    </div>
+    <button type="button" class="btn" routerLink="/admin">VOLVER</button>
+</div>
+
